@@ -31,6 +31,10 @@ body{
   padding-bottom: 180px;
 }
 
+.page{
+  padding-top: 161px;
+}
+
 .header{
   display: flex;
   justify-content: space-between;
@@ -79,14 +83,19 @@ body{
     font-size: 18px;
     letter-spacing: 0.7px;
     margin-bottom: 30px;
-    width: 90%;
+    width: 80%;
+  }
+
+  &__name-top{
+    margin-top: 16px;
+    margin-left: 0;
   }
 
   &__title{
     font-size: 48px;
     font-weight: 700;
     letter-spacing: 1.8px;
-    width: 90%;
+    width: 80%;
     margin-bottom: 40px;
 
     span {
@@ -101,7 +110,7 @@ body{
   &__description{
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
-    width: 90%;
+    width: 80%;
     line-height: 24px;
     margin-bottom: 24px;
     letter-spacing: 0.7px;
@@ -137,5 +146,44 @@ body{
     height: 643px;
     background-image: url("../img/book.svg");
     flex-basis: 445px;
+  }
+}
+
+.block-author{
+  display: flex;
+  justify-content: space-between;
+}
+
+.block-ava{
+  position: relative;
+
+  &__svg{
+    position: absolute;
+    z-index: -1;
+    right: 0;
+  }
+
+  &__img{
+     margin-top: 47px;
+     margin-right: 44px;
+  }
+}
+
+.block-counter{
+  display: flex;
+  justify-content: space-around;
+
+  p{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    span{
+      font-family: 'Roboto Slab', serif;
+      display: block;
+      font-weight: 100;
+      font-size: 80px;
+      margin-bottom: 12px;
+      color: $accent-color;
+    }
   }
 }

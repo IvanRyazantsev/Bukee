@@ -60,12 +60,25 @@ body{
     &__item{
       margin-left: 22px;
       padding-bottom: 5px;
-      border-bottom: 3px solid transparent;
       transition: 0.3s;
-      &:hover{
-        border-bottom: 3px solid $accent-color;
-      }
     }
+
+      &__item::after{
+      display: block;
+      content: "";
+      margin-left: 50%;
+      margin-top: 5px;
+      height: 3px;
+      width: 0%;
+      background-color: $accent-color;
+      transition: 0.4s ease-in-out;
+      }
+
+      &__item:hover::after {
+        margin-left: 0;
+        width: 100%;
+      }
+
 
     &__link{
        color: $light-color;

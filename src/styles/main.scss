@@ -27,6 +27,10 @@ body{
   line-height: 24px;
 }
 
+.fab{
+  color: $accent-color;
+}
+
 .wrap{
   max-width: 1170px;
   margin: 0 auto;
@@ -364,7 +368,11 @@ body{
         display: flex;
         justify-content: flex-start;
         width: 50%;
-        margin-left: 7%;
+        margin-left: 2%;
+
+        &>li{
+          margin-right: 20px;
+        }
       }
     }
   }
@@ -554,5 +562,68 @@ body{
     background-color: $accent-color;
     color: $light-color;
     box-shadow: 0 2px 2px #adedbb;
+  }
+}
+
+.footer{
+  background-color: $bg-dark-color;
+  color: $grey-color;
+}
+
+.block-footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 14% 0;
+
+  &-item{
+    flex-basis: 31%;
+    &_start{
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    &_center{
+      display: flex;
+      justify-content: center;
+    }
+
+    &_end{
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  &__copyright{
+    margin-top: 8%;
+  }
+
+  &__logo{
+    display: block;
+    width: 137px;
+    height: 28px;
+    background-image: url("../img/logo-2.svg");
+    margin-bottom: 8%;
+  }
+
+  &__title{
+    font-size: 18px;
+    color: $accent-color;
+    margin-bottom: 8%;
+  }
+
+  &__list{
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  &__social{
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 4%;
+
+    &>li{
+      margin-right: 8%;
+    }
   }
 }
